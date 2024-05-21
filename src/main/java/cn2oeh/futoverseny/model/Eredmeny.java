@@ -10,17 +10,17 @@ public class Eredmeny {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private Long futoId;
+    private Long eredmenyId;
     private String eredmenyFutoName;
-    private Integer eredmenyVersenyName;
-    private long eredmenyTime;
+    private String eredmenyVersenyName;
+    private Long eredmenyTime;
 
-    public Long getFutoId() {
-        return futoId;
+    public Long getEredmenyId() {
+        return eredmenyId;
     }
 
-    public void setFutoId(Long futoId) {
-        this.futoId = futoId;
+    public void setEredmenyId(Long eredmenyId) {
+        this.eredmenyId = eredmenyId;
     }
 
     public String getEredmenyFutoName() {
@@ -31,19 +31,19 @@ public class Eredmeny {
         this.eredmenyFutoName = eredmenyFutoName;
     }
 
-    public Integer getEredmenyVersenyName() {
+    public String getEredmenyVersenyName() {
         return eredmenyVersenyName;
     }
 
-    public void setEredmenyVersenyName(Integer eredmenyVersenyName) {
+    public void setEredmenyVersenyName(String eredmenyVersenyName) {
         this.eredmenyVersenyName = eredmenyVersenyName;
     }
 
-    public long getEredmenyTime() {
+    public Long getEredmenyTime() {
         return eredmenyTime;
     }
 
-    public void setEredmenyTime(long eredmenyTime) {
+    public void setEredmenyTime(Long eredmenyTime) {
         this.eredmenyTime = eredmenyTime;
     }
 }
