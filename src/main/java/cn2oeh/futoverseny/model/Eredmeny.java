@@ -15,4 +15,35 @@ public class Eredmeny {
     private Integer eredmenyVersenyName;
     private long eredmenyTime;
 
+    public Long getFutoId() {
+        return futoId;
+    }
+
+    public void setFutoId(Long futoId) {
+        this.futoId = futoId;
+    }
+
+    public String getEredmenyFutoName() {
+        return eredmenyFutoName;
+    }
+
+    public void setEredmenyFutoName(String eredmenyFutoName) {
+        this.eredmenyFutoName = eredmenyFutoName;
+    }
+
+    public Integer getEredmenyVersenyName() {
+        return eredmenyVersenyName;
+    }
+
+    public void setEredmenyVersenyName(Integer eredmenyVersenyName) {
+        this.eredmenyVersenyName = eredmenyVersenyName;
+    }
+
+    public long getEredmenyTime() {
+        return eredmenyTime;
+    }
+
+    public void setEredmenyTime(long eredmenyTime) {
+        this.eredmenyTime = eredmenyTime;
+    }
 }
