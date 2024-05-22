@@ -1,0 +1,34 @@
+GET http://localhost:8080/api/futok/getRunners
+
+[
+    {
+        "futoId": 1,
+        "futoName": "Emil",
+        "futoAge": 49,
+        "futoSex": "fiú"
+    },
+    {
+        "futoId": 2,
+        "futoName": "Ferkó",
+        "futoAge": 46,
+        "futoSex": "fiú"
+    },
+    {
+        "futoId": 3,
+        "futoName": "Andi",
+        "futoAge": 45,
+        "futoSex": "lány"
+    },
+    {
+        "futoId": 4,
+        "futoName": "Gabi",
+        "futoAge": 35,
+        "futoSex": "lány"
+    },
+    {
+        "futoId": 5,
+        "futoName": "Peti",
+        "futoAge": 40,
+        "futoSex": "fiú"
+    }
+]

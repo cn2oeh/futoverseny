@@ -1,0 +1,14 @@
+GET http://localhost:8080/api/verseny/getAllVerseny
+
+[
+    {
+        "versenyId": 1,
+        "versenyName": "Kis kör",
+        "versenyLength": 1
+    },
+    {
+        "versenyId": 2,
+        "versenyName": "Nagy kör",
+        "versenyLength": 2
+    }
+]

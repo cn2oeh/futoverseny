@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Verseny</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${verseny.versenyName}"></h1>
+    <hr>
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Eredmény azonosító:</th>
+            <td th:text="${eredmeny.eredmenyId}"></td>
+        </tr>
+        <tr>
+            <th>Verseny neve:</th>
+            <td th:text="${verseny.versenyName}"></td>
+        </tr>
+        <tr>
+            <th>Verseny hossza:</th>
+            <td th:text="${versenyLength}"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Eredmények</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="eredmeny : ${eredmeny.eredmenyTime}">
+                        <td align="right" th:text="${erermeny.eredmenyTime} + ' seconds'"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <a th:href="@{/verseny/{id}/addVerseny(id=${verseny.versenyId})}" class="btn btn-secondary">Verseny hozzáadása</a>
+    <a href="/verseny" class="btn btn-primary">Vissza</a>
+</div>
+</body>
+</html>
